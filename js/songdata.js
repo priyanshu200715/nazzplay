@@ -1,5 +1,5 @@
 {
-        src: "https://drive.google.com/uc?export=download&id=13mUgrDzHyptWdBGEFzf0jnVdmiovUvES",
+        src: "audio/song1.mp3",
         title: "On My Way",
         artist: "Alan Walker",
         img: "img/song1.png"
