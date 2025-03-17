@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- 📌 Profile Header with Background Image -->
+    <div class="profile-header" >
+        <img src="img/aong1.png" alt="Cover Image" class="cover-img">
+        <div class="profile-pic-container">
+            <img src="img/song2.png" alt="Profile Picture" class="profile-pic">
+        </div>
+    </div>
+
+    <!-- 📌 Profile Info -->
+    <div class="profile-info">
+        <h2 class="profile-name">John Doe</h2>
+        <p class="profile-phone">06-586 478 4581</p>
+        <p class="profile-bio">
+            Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur Lorem Ipsum.
+        </p>
+
+        <!-- 📌 Stats Section -->
+        <div class="profile-stats">
+            <div class="stat">
+                <p>Post</p>
+                <span>0</span>
+            </div>
+            <div class="stat">
+                <p>Following</p>
+                <span>0</span>
+            </div>
+            <div class="stat">
+                <p>Followers</p>
+                <span>0</span>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- 🎶 Fixed Music Player Above Navbar -->
+      <div class="fixed-box">
+        <a href="music_player.html" class="song-link">
+            <img src="img/song2.png" alt="Song Poster" class="left-img" id="player-img">
+            <div class="song-info">
+                <p class="song-title" id="player-title" style="margin-left: 5px;">Song Name</p>
+                <p class="artist-name" id="player-artist" style="margin-left: 5px;">Artist Name</p>
+            </div>
+        </a>
+        <button id="play-pause"><i class="fas fa-play"></i></button>
+        <div class="progress-bar">
+            <input type="range" id="progress-bar" value="0">
+        </div>
+    </div>
+
+    <!-- 📌 Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item"><i class="fas fa-home"></i></a>
+        <a href="search.html" class="nav-item"><i class="fas fa-search"></i></a>
+        <a href="profile.html" class="nav-item"><i class="fas fa-user"></i></a>
+        <a href="#" class="nav-item"><i class="fas fa-backward"></i></a>
+    </nav>
+
+
+    <script src="js/songdata.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

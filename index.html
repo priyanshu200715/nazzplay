@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- 🎤 Artists Section (Optional) -->
+    <div class="container">
+        <h2>Artists 🎵</h2>
+        <div class="music-list" id="artist-container">
+            <div class="song">
+                <img src="img/arjit.png" alt="Artist">
+                <p>Arjit Singh</p>
+            </div>
+            <div class="song">
+                <img src="img/akhil.png" alt="Artist">
+                <p>Akhil</p>
+            </div>
+            <div class="song">
+                <img src="img/alan.png" alt="Artist">
+                <p>Alan Walker</p>
+            </div>
+            <div class="song">
+                <img src="img/atif.png" alt="Artist">
+                <p>Atif Aslam</p>
+            </div>
+            <div class="song">
+                <img src="img/diljit_dosanjh.png" alt="Artist">
+                <p>Diljit Dosanjh</p>
+            </div>
+            <div class="song">
+                <img src="img/dhvani.png" alt="Artist">
+                <p>Dhavni</p>
+            </div>
+            <div class="song">
+                <img src="img/jubin Nautiyal.png" alt="Artist">
+                <p>Jubin Nautiyal</p>
+            </div>
+            <div class="song">
+                <img src="img/neha.png" alt="Artist">
+                <p>Neha kakkar</p>
+            </div>
+            
+
+            <!-- 🎤 Artists can also be dynamically generated if needed -->
+        </div>
+    </div>
+
+    <!-- 🎵 Music List Section -->
+    <div class="container">
+        <h2>My Music List 🎵</h2>
+        <div class="music-list-wrapper">
+            <!-- ✅ Dynamic song containers (song-container-1, song-container-2, etc.) will be added here by script.js -->
+        </div>
+    </div>
+
+    
+
+    </div>
+
+    <!-- 🎶 Fixed Music Player Above Navbar -->
+    <div class="fixed-box">
+        <a href="music_player.html" class="song-link">
+            <img src="img/song2.png" alt="Song Poster" class="left-img" id="player-img">
+            <div class="song-info">
+                <p class="song-title" id="player-title" style="margin-left: 5px;">Song Name</p>
+                <p class="artist-name" id="player-artist" style="margin-left: 5px;">Artist Name</p>
+            </div>
+        </a>
+        <button id="play-pause"><i class="fas fa-play"></i></button>
+        <div class="progress-bar">
+            <input type="range" id="progress-bar" value="0">
+        </div>
+    </div>
+
+    <!-- 📌 Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item"><i class="fas fa-home"></i></a>
+        <a href="search.html" class="nav-item"><i class="fas fa-search"></i></a>
+        <a href="profile.html" class="nav-item"><i class="fas fa-user"></i></a>
+        <a href="index.html" class="nav-item"><i class="fas fa-backward"></i></a>
+    </nav>
+
+    <!-- 🎵 Hidden Audio Player -->
+    <audio id="audio"></audio>
+
+    <!-- 📌 JavaScript -->
+    <script src="js/songdata.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

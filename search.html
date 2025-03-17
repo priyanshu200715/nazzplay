@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- 📌 Fixed Search Box -->
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search for songs, artists...">
+        <button id="searchBtn"><i class="fas fa-search"></i></button>
+    </div>
+    
+
+    
+
+    <!-- 📌 Search Results Section (Added) -->
+    <div class="recent-search-container">
+        <h2>Search Results</h2>
+        <div id="searchResults" class="recent-search-list"></div> <!-- 🔥 New -->
+    </div>
+
+      <!-- 🎶 Fixed Music Player Above Navbar -->
+      <div class="fixed-box">
+        <a href="music_player.html" class="song-link">
+            <img src="img/song2.png" alt="Song Poster" class="left-img" id="player-img">
+            <div class="song-info">
+                <p class="song-title" id="player-title" style="margin-left: 5px;">Song Name</p>
+                <p class="artist-name" id="player-artist" style="margin-left: 5px;">Artist Name</p>
+            </div>
+        </a>
+        <button id="play-pause"><i class="fas fa-play"></i></button>
+        <div class="progress-bar">
+            <input type="range" id="progress-bar" value="0">
+        </div>
+    </div>
+
+    <!-- 📌 Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item"><i class="fas fa-home"></i></a>
+        <a href="search.html" class="nav-item"><i class="fas fa-search"></i></a>
+        <a href="profile.html" class="nav-item"><i class="fas fa-user"></i></a>
+        <a href="#" class="nav-item"><i class="fas fa-backward"></i></a>
+    </nav>
+
+    <!-- 📌 Include JavaScript -->
+    <script src="js/songdata.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #1e1e1e, #111);
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🔙 Back Button -->
+    <button id="back-button" class="control-btn"><i class="fas fa-arrow-left"></i></button>
+
+    <div class="music-player">
+        <!-- Background Overlay -->
+        <div class="background"></div>
+
+        <!-- Player Content -->
+        <div class="player-content">
+            <img src="img/song1.png" alt="Album Cover" id="player-img" class="album-cover">
+            <div class="song-info">
+                <h2 id="player-title">What Am I To Do</h2>
+                <h3 id="player-artist">Mick Jenkins</h3>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button aria-label="Shuffle" class="control-btn"><i class="fas fa-random"></i></button>
+                <button id="prevSong" aria-label="Previous Song" class="control-btn"><i class="fas fa-step-backward"></i></button>
+                <button id="play-pause" aria-label="Play/Pause" class="control-btn"><i class="fas fa-play"></i></button>
+                <button id="nextSong" aria-label="Next Song" class="control-btn"><i class="fas fa-step-forward"></i></button>
+                <button aria-label="Like" class="control-btn"><i class="fas fa-heart"></i></button>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress-bar" value="0">
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="audio"></audio>
+
+    <!-- JavaScript -->
+    <script type="module" src="js/songdata.js"></script>
+    <script type="module" src="js/script.js"></script>
+
+
+</body>
+</html>
