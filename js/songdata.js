@@ -1,10 +1,9 @@
-const songList = [
-   {
-    src: "https://drive.google.com/uc?export=download&id=13mUgrDzHyptWdBGEFzf0jnVdmiovUvES",
-    title: "Dunny 82k",
-    artist: "Ap Dhillon",
-    img: "img/arjit/arjit10.png"
-},
+{
+        src: ""https://drive.google.com/uc?export=download&id=13mUgrDzHyptWdBGEFzf0jnVdmiovUvES"",
+        title: "On My Way",
+        artist: "Alan Walker",
+        img: "img/song1.png"
+    },
 
     {
         src: "audio/song2.mp3",
